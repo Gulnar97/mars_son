@@ -1,0 +1,670 @@
+.container1 {
+  width: 80%;
+  margin: auto;
+}
+
+#blog .top-text {
+  text-align: center;
+  padding: 80px;
+  background-image: url("../photo/background2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#blog .top-text h1 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#blog .general {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#blog .general .blog-post {
+  width: 50%;
+  padding: 20px;
+}
+#blog .general .blog-post img {
+  border-radius: 10px;
+  width: 100%;
+  height: 350px;
+}
+#blog .general .blog-post a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #550505;
+}
+#blog .general .blog-post a:hover {
+  color: #8e1a1a;
+}
+#blog .general .blog-post h6 {
+  color: rgb(136, 134, 134);
+}
+#blog .general .blog-post h6 i {
+  padding: 5px;
+}
+#blog .general .blog-post hr {
+  color: #550505;
+  width: 50%;
+}
+
+#update .info {
+  margin-top: 80px;
+  padding: 120px;
+  background-image: url("../photo/background3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#update .info .text {
+  text-align: center;
+}
+#update .info .text h1 {
+  color: white;
+}
+#update .info .text input {
+  padding: 10px 100px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border-color: blue;
+}
+#update .info .text .box {
+  align-items: center;
+  width: 1300px;
+  height: 100px;
+}
+#update .info .text .box a {
+  background-color: #8e1a1a;
+  padding: 25px 80px;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#update .info .text .box a:hover .main {
+  transform: scale(1.2);
+}
+#update .info .text .box a:hover .before {
+  transform: translateY(-100%);
+}
+#update .info .text .box a:hover .after {
+  transform: translateY(100%);
+}
+#update .info .text .box a .main {
+  color: white;
+  display: inline-block;
+  transform: scale(0.01);
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
+#update .info .text .box a .before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #550505;
+  color: white;
+  z-index: 2;
+  width: 100%;
+  height: 50%;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transform: translateY(0);
+  transition: 0.3s ease-in-out;
+  line-height: 0;
+  overflow: hidden;
+}
+#update .info .text .box a .after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #550505;
+  color: white;
+  z-index: 2;
+  width: 100%;
+  height: 50%;
+  font-size: 22px;
+  text-align: center;
+  transform: translateY(0);
+  transition: 0.3s ease-in-out;
+  line-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  #blog .top-text {
+    text-align: center;
+    padding: 80px;
+    background-image: url("../photo/background2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #blog .top-text h1 {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #blog .general {
+    margin-top: 60px;
+    width: 100%;
+  }
+  #blog .general .blog-post {
+    padding: 20px;
+    width: 100%;
+  }
+  #blog .general .blog-post img {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+  }
+  #blog .general .blog-post a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #550505;
+  }
+  #blog .general .blog-post a:hover {
+    color: #8e1a1a;
+  }
+  #blog .general .blog-post h6 {
+    color: rgb(136, 134, 134);
+  }
+  #blog .general .blog-post h6 i {
+    padding: 5px;
+  }
+  #update .info {
+    margin-top: 80px;
+    padding: 120px;
+    width: 100%;
+    background-image: url("../photo/background3.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #update .info .text {
+    text-align: center;
+  }
+  #update .info .text h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgba(69, 52, 111, 0.407);
+    border-radius: 10px;
+    font-weight: 800;
+  }
+  #update .info .text input {
+    padding: 10px 100px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-color: blue;
+  }
+  #update .info .text .box {
+    align-items: center;
+    width: 350px;
+    height: 100px;
+  }
+  #update .info .text .box a {
+    background-color: rgb(208, 226, 49);
+    padding: 25px 80px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #update .info .text .box a:hover .main {
+    transform: scale(1.2);
+  }
+  #update .info .text .box a:hover .before {
+    transform: translateY(-100%);
+  }
+  #update .info .text .box a:hover .after {
+    transform: translateY(100%);
+  }
+  #update .info .text .box a .main {
+    color: white;
+    display: inline-block;
+    transform: scale(0.01);
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+  }
+  #update .info .text .box a .before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #8e1a1a;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    line-height: 0;
+    overflow: hidden;
+  }
+  #update .info .text .box a .after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #8e1a1a;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    line-height: 0;
+    overflow: hidden;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #blog {
+    width: 100%;
+  }
+  #blog .top-text {
+    text-align: center;
+    padding: 80px;
+    background-image: url("../photo/background2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #blog .top-text h1 {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #blog .general {
+    margin-top: 60px;
+    width: 100%;
+  }
+  #blog .general .blog-post {
+    padding: 20px;
+    width: 100%;
+  }
+  #blog .general .blog-post img {
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+  }
+  #blog .general .blog-post a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #550505;
+  }
+  #blog .general .blog-post a:hover {
+    color: #8e1a1a;
+  }
+  #blog .general .blog-post h6 {
+    color: rgb(136, 134, 134);
+  }
+  #blog .general .blog-post h6 i {
+    padding: 5px;
+  }
+  #update .info {
+    margin-top: 80px;
+    padding: 120px;
+    width: 100%;
+    background-image: url("../photo/background3.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #update .info .text {
+    text-align: center;
+  }
+  #update .info .text h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgba(69, 52, 111, 0.407);
+    border-radius: 10px;
+    font-weight: 800;
+  }
+  #update .info .text input {
+    padding: 10px 100px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-color: blue;
+  }
+  #update .info .text .box {
+    align-items: center;
+    width: 500px;
+    height: 100px;
+  }
+  #update .info .text .box a {
+    background-color: rgb(208, 226, 49);
+    padding: 25px 80px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #update .info .text .box a:hover .main {
+    transform: scale(1.2);
+  }
+  #update .info .text .box a:hover .before {
+    transform: translateY(-100%);
+  }
+  #update .info .text .box a:hover .after {
+    transform: translateY(100%);
+  }
+  #update .info .text .box a .main {
+    color: white;
+    display: inline-block;
+    transform: scale(0.01);
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+  }
+  #update .info .text .box a .before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #8e1a1a;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    line-height: 0;
+    overflow: hidden;
+  }
+  #update .info .text .box a .after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #8e1a1a;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    line-height: 0;
+    overflow: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #blog {
+    width: 100%;
+  }
+  #blog .top-text {
+    text-align: center;
+    padding: 80px;
+    background-image: url("../photo/background2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #blog .top-text h1 {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #blog .general {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #blog .general .blog-post {
+    padding: 20px;
+    width: 50%;
+  }
+  #blog .general .blog-post img {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+  }
+  #blog .general .blog-post a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #550505;
+  }
+  #blog .general .blog-post a:hover {
+    color: #8e1a1a;
+  }
+  #blog .general .blog-post h6 {
+    color: rgb(136, 134, 134);
+  }
+  #blog .general .blog-post h6 i {
+    padding: 5px;
+  }
+  #update .info {
+    margin-top: 80px;
+    padding: 120px;
+    width: 100%;
+    background-image: url("../photo/background3.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #update .info .text {
+    text-align: center;
+  }
+  #update .info .text h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgba(69, 52, 111, 0.407);
+    border-radius: 10px;
+    font-weight: 800;
+  }
+  #update .info .text input {
+    padding: 10px 100px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-color: blue;
+  }
+  #update .info .text .box {
+    align-items: center;
+    width: 700px;
+    height: 100px;
+  }
+  #update .info .text .box a {
+    background-color: rgb(208, 226, 49);
+    padding: 25px 80px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #update .info .text .box a:hover .main {
+    transform: scale(1.2);
+  }
+  #update .info .text .box a:hover .before {
+    transform: translateY(-100%);
+  }
+  #update .info .text .box a:hover .after {
+    transform: translateY(100%);
+  }
+  #update .info .text .box a .main {
+    color: white;
+    display: inline-block;
+    transform: scale(0.01);
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+  }
+  #update .info .text .box a .before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #8e1a1a;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    line-height: 0;
+    overflow: hidden;
+  }
+  #update .info .text .box a .after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #8e1a1a;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    line-height: 0;
+    overflow: hidden;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #blog {
+    width: 100%;
+  }
+  #blog .top-text {
+    text-align: center;
+    padding: 80px;
+    background-image: url("../photo/background2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #blog .top-text h1 {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #blog .general {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #blog .general .blog-post {
+    padding: 20px;
+    width: 50%;
+  }
+  #blog .general .blog-post img {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+  }
+  #blog .general .blog-post a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #550505;
+  }
+  #blog .general .blog-post a:hover {
+    color: #8e1a1a;
+  }
+  #blog .general .blog-post h6 {
+    color: rgb(136, 134, 134);
+  }
+  #blog .general .blog-post h6 i {
+    padding: 5px;
+  }
+  #update .info {
+    margin-top: 80px;
+    padding: 120px;
+    width: 100%;
+    background-image: url("../photo/background3.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #update .info .text {
+    text-align: center;
+  }
+  #update .info .text h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgba(69, 52, 111, 0.407);
+    border-radius: 10px;
+    font-weight: 800;
+  }
+  #update .info .text input {
+    padding: 10px 100px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-color: blue;
+  }
+  #update .info .text .box {
+    align-items: center;
+    width: 930px;
+    height: 100px;
+  }
+  #update .info .text .box a {
+    background-color: rgb(208, 226, 49);
+    padding: 25px 80px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #update .info .text .box a:hover .main {
+    transform: scale(1.2);
+  }
+  #update .info .text .box a:hover .before {
+    transform: translateY(-100%);
+  }
+  #update .info .text .box a:hover .after {
+    transform: translateY(100%);
+  }
+  #update .info .text .box a .main {
+    color: white;
+    display: inline-block;
+    transform: scale(0.01);
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+  }
+  #update .info .text .box a .before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #8e1a1a;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    line-height: 0;
+    overflow: hidden;
+  }
+  #update .info .text .box a .after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #8e1a1a;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    line-height: 0;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=style.css.map */
